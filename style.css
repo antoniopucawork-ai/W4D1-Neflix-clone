@@ -1,0 +1,87 @@
+body {
+  background-color: #141414;
+  color: white;
+}
+.navbar {
+  background-color: #141414;
+  padding: 0.8rem 2rem;
+}
+
+.logo {
+  width: 110px;
+}
+
+.nav-link {
+  color: #e5e5e5;
+  font-size: 0.9rem;
+}
+
+.nav-link:hover {
+  color: #b3b3b3;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.kids {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.right-menu {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+  background-color: #46d369;
+  border-radius: 3px;
+}
+header h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.btn-outline-light {
+  border-radius: 0;
+}
+
+.btn-outline-secondary {
+  border-radius: 0;
+}
+.movie-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+.footer {
+  color: #808080;
+  max-width: 900px;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  margin-right: 20px;
+  color: #808080;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons i:hover {
+  color: white;
+}
+
+.copyright {
+  font-size: 0.75rem;
+}
