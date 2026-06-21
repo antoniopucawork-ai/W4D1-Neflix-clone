@@ -85,3 +85,15 @@ header h2 {
 .copyright {
   font-size: 0.75rem;
 }
+.movie-row {
+  opacity: 0;
+  transform: translateY(80px) scale(0.95);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.movie-row.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
