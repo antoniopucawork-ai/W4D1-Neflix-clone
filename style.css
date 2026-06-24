@@ -2,6 +2,9 @@ body {
   background-color: #141414;
   color: white;
 }
+
+/* NAVBAR */
+
 .navbar {
   background-color: #141414;
   padding: 0.8rem 2rem;
@@ -14,52 +17,74 @@ body {
 .nav-link {
   color: #e5e5e5;
   font-size: 0.9rem;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
   color: #b3b3b3;
 }
 
-.avatar {
-  width: 32px;
-  height: 32px;
+.right-menu {
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .kids {
   font-size: 0.8rem;
   font-weight: 600;
 }
-.right-menu {
-  font-size: 0.9rem;
-  cursor: pointer;
-}
+
 .avatar {
   width: 32px;
   height: 32px;
   background-color: #46d369;
   border-radius: 3px;
 }
+
+/* HEADER */
+
 header h2 {
   font-size: 2rem;
   font-weight: 500;
 }
 
-.btn-outline-light {
-  border-radius: 0;
-}
-
+.btn-outline-light,
 .btn-outline-secondary {
   border-radius: 0;
 }
+
+/* CAROUSEL E FILM */
+
+.movie-row {
+  opacity: 0;
+  transform: translateY(80px) scale(0.95);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.movie-row.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
 .movie-card {
+  width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .movie-card:hover {
-  transform: scale(1.15);
+  transform: scale(1.12);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
   z-index: 10;
+  position: relative;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+/* FOOTER */
+
 .footer {
   color: #808080;
   max-width: 900px;
@@ -75,7 +100,7 @@ header h2 {
   margin-right: 20px;
   color: #808080;
   cursor: pointer;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
 .social-icons i:hover {
@@ -85,15 +110,19 @@ header h2 {
 .copyright {
   font-size: 0.75rem;
 }
-.movie-row {
-  opacity: 0;
-  transform: translateY(80px) scale(0.95);
-  transition:
-    opacity 0.8s ease,
-    transform 0.8s ease;
-}
 
-.movie-row.visible {
-  opacity: 1;
-  transform: translateY(0) scale(1);
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .logo {
+    width: 90px;
+  }
+
+  header h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
 }
